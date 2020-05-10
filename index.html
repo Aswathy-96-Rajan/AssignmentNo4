@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <title>Assignment No. 4</title>
+</head>
+<body>
+    <form class="form-container bg">
+        <h3 style="color: maroon;">(Q.NO.1)  JS program to accept an array and get the first element and check whether it is prime or not</h3>
+        <br>
+        <div class="form-group">
+        <input type="text" class="form-control" id="array1" placeholder="Enter the First Element" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        <br>
+        <input type="text" class="form-control" id="array2" placeholder="Enter the Second Element" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        <br>
+        <input type="text" class="form-control" id="array3" placeholder="Enter the Third Element" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        <br>
+        <div id="result"></div>
+        </div>
+        <button type="submit" id="btn" onclick="item1(); return false;" style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+        
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.2)  JS program to find the most frequent item of an array</h3>
+        <br>
+        <div class="form-group">
+        <input type="text" class="form-control" id="arr2" placeholder="Enter an Array" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        </div>
+        <button type="submit" id="btn" onclick="item2(); return false;" style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+        
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.3)  JS program to accept input as a string and swap the case of each character</h3>
+        <br>
+        <div class="form-group">
+        <input type="text" class="form-control" id="str" placeholder="Enter a String" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        </div>
+        <button type="submit" id="btn" onclick="item3(); return false;" style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+        
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.4)  JS program to find the sum of square of elements of an array</h3>
+        <br>
+        <div class="form-group">
+        <input type="text" class="form-control" id="arr3" placeholder="Enter an Array" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        </div>
+        <button type="submit" id="btn" onclick="item4(); return false;" style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+        
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.5)  JS program to iterate from 0 to 15 and display whether it is Even or Odd</h3>
+        <br>
+        <button type="submit" id="btn" onclick="item5(); return false;"style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+
+
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.6)  JS program to truncate the given string</h3>
+        <br>
+        <div class="form-group">
+        <input type="text" class="form-control" id="text" placeholder="Enter String" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        </div>
+        <button type="submit" id="btn" onclick="item6(); return false;"style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+
+
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.7)  JS program to accept 2 integers and to find the largest</h3>
+        <br>
+        <div class="form-group">
+        <input type="number" class="form-control" id="number1" placeholder="Enter First Number" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        <br>
+        <input type="number" class="form-control" id="number2" placeholder="Enter Second Number" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        </div>
+        <button type="submit" id="btn" onclick="findLarge(); return false;" style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+        
+        
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.8)  JS program to read the objects of an array and arrange it in alphabetical order</h3>
+        <br>
+        <div class="form-group">
+        <input type="text" class="form-control" id="a1" placeholder="Enter the First Object" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        <br>
+        <input type="text" class="form-control" id="a2" placeholder="Enter the Second Object" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        <br>
+        <input type="text" class="form-control" id="a3" placeholder="Enter the Third Object" onfocus="(this.value='')" style="border-color: black; width: 1000px; margin-left: 10px;">
+        <br>
+        <button type="submit" id="btn" onclick="item8(); return false;" style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.9)  JS program to print the letters of "Javascript"</h3>
+        <br>
+        <button type="submit" id="btn" onclick="item9(); return false;"style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+
+        <br>
+        <br>
+        <h3 style="color: maroon;">(Q.NO.10)  JS program to print the pattern using nested for loop</h3>
+        <br>
+        <button type="submit" id="btn" onclick="item10(); return false;"style="margin-left: 10px; width: 200px; background-color: lightseagreen; border-color: maroon;">RESULT</button>
+        
+    
+    
+    
+    
+    
+    
+    
+    </form>
+        
+<script src="../10 Questions/index.js"></script>
+</body>
+</html>
